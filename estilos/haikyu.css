@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+/**/
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo{
+    width: 150px;
+    height: 100%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    font-size: 25px;
+}
+
+#mainNav{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+}
+#mainNav.desplegar{
+    overflow: visible;
+    opacity: 1;
+    transition: all .5s;
+    z-index: 10;
+}
+
+.main-lista{
+    width: 100%;
+    height: auto;
+    
+}
+
+.lista{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+
+.lista a{
+    color: white;
+    font-size: 19px;
+}
+
+.lista-sub{
+    padding: 0px;
+}
+
+.ma-lista{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    position: relative;
+}
+
+.ma-lista i{
+    font-size: 19px;
+    position: absolute;
+    top: 8px;
+    left: 63%;
+}
+
+
+#main-sublista{
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+
+.s-lista{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.s-lista a{
+    font-size: 19px;
+}
+
+
+/**/
+
+.main-header{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/Haikyu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titulo-header{
+    width: 300px;
+    z-index: 2;
+}
+
+.titulo-header h1{
+    font-size: 45px;
+}
+
+.titulo-header p{
+    padding: 20px;
+    font-size: 19px;
+}
+
+
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/**/
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.main-sinopsis{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/haikyuu-personagens-destacada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+.sinopsis-menos{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 35px;
+    padding: 10px;
+}
+.sinopsis-menos h2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.sinopsis-menos p{
+    font-size: 20px;
+}
+.sinopsis-menos span{
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sinopsis-mas{
+    width: 100%;
+    height: 0px;
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+}
+.sinopsis-mas p{
+    font-size: 20px;
+}
+.sinopsis-mas span{
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/**/
+
+.main-capitulos{
+    width: 100%;
+    height: auto;
+}
+.titulo-cap{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+.titulo-cap h2{
+    font-size: 25px;
+}
+.content-capitulos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    background-color: orange;
+    border-radius: 35px;
+}
+.main-img{
+    width: 100%;
+    height: 85%;
+  
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px 35px 0px 0px;
+}
+.main-titulot{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+
+.img-footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background-image: url(../img/haikyuufooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    position: relative;
+}
+
+.iconos{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconos img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+.redes{
+    width: 80px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+.redes a{
+    color: white;
+    font-size: 25px;
+}
+
+.footer-listas{
+    color: white;
+    padding: 10px 20px;
+}
+.footer-listas h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.footer-listas ul{
+    margin-left: 10px;
+}
+.footer-listas li{
+    list-style:circle;
+}
+.footer-listas a{
+    color: white;
+}
+.creador{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.creador h3{
+    font-size: 20px;
+}
