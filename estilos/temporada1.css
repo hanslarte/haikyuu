@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: black;
+}
+
+.logo{
+    width: 150px;
+    height: 100%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    font-size: 25px;
+    color: orange;
+}
+
+#mainNav{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+}
+#mainNav.desplegar{
+    overflow: visible;
+    opacity: 1;
+    transition: all .5s;
+    z-index: 10;
+}
+
+.main-lista{
+    width: 100%;
+    height: auto;
+    
+}
+
+.lista{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+
+.lista a{
+    color: white;
+    font-size: 19px;
+}
+
+.lista-sub{
+    padding: 0px;
+}
+
+.ma-lista{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    position: relative;
+}
+
+.ma-lista i{
+    font-size: 19px;
+    position: absolute;
+    top: 8px;
+    left: 63%;
+}
+
+
+#main-sublista{
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+
+.s-lista{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.s-lista a{
+    font-size: 19px;
+}
+
+
+/**/
+
+.main-header{
+    width: 100%;
+    height: 90vh;
+}
+.header-img{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/temporada1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.texto-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding:0px 20px;
+}
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+}
+.texto-img h2{
+    color: white;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.header-sinopsis{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+.header-titulo{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+}
+.header-titulo h2{
+    color: white;
+    font-size: 25px;
+}
+.parrafo{
+    padding: 10px 20px;
+}
+.parrafo p{
+    color: white;
+    font-size: 20px;
+}
+/**/
+.main{
+    width: 100%;
+    height: auto;
+}
+.titulo-capitulos{
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+}
+.titulo-capitulos h2{
+    font-size: 25px;
+}
+.main-capitulos{
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cap{
+    width: 70px;
+    height: 40px;
+    background-color: orange;
+    margin: 5px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus i{
+    font-size: 30px;
+    color: orange;
+}
+
+.mas-capitulos{
+    width: 100%;
+    height: 0px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.relacionados{
+    width: 100%;
+    height: 300px;
+}
